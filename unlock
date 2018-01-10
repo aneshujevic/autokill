@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Kills two processes (if they exist) with id's found through piped programs
+	kill $(ps -aux | grep autolock | proc_id)
+	printf "Done..\n"
